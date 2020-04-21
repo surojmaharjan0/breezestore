@@ -1,0 +1,352 @@
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.logo{
+    font-size: 25px;
+    text-decoration: overline;
+}
+.text-primary{
+    color: #3C1053;
+    font-size: 35px;
+}
+.main-nav{
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+.main-nav li {
+    display: inline;
+    margin:10px;
+}
+.main-nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding:10px;
+    color:#3C1053
+}
+.main-nav li a:hover{
+    background: #3C1053;
+    color: white;
+    border-radius: 10px;
+}
+.search-input{
+    outline:none;
+    border:none;
+}
+.search-div{
+    border:1px solid #76498D;
+    border-radius: 7px;
+    padding:7px;
+}
+.btn-primary{
+    background: #3C1053;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding:8px;
+    border:1px solid #3C1053;
+}
+.btn-primary:hover{
+    background: none;
+    color:#3C1053;
+    border:1px solid #3C1053;
+    border-radius: 10px;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#banner{
+    background-image: url(images/banner.jpg);
+    height:70vh;
+    background-size:cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sales-text,.hurry,.shop-now{
+    color:white;
+    position: relative;
+    right:22%;
+}
+.sales-text{
+    font-size: 30px;
+}
+.hurry{
+    font-size: 90px;
+    margin:0;
+}
+.shop-now{
+    margin-top:30px
+}
+.mt-2{
+    margin-top:25px;
+}
+.per{
+    font-size: 65px;
+    color:#3C1053;
+    font-weight:bold;
+}
+#speciality{
+    display: flex;
+    justify-content: space-between;
+}
+.speciality1,.speciality2,.speciality3,.speciality4{
+    border:1px solid #CFD8DC;
+    border-radius: 10px;
+    padding:25px;
+    margin-top:50px;
+    box-shadow: 4px 4px 4px #ccc;
+    text-align: center;
+    width:25%;
+}
+.purple{
+    color: #3C1053;
+    font-size: 20px;   
+}
+
+.text-center{
+    text-align: center;
+}
+#trending{
+    margin-top:60px;
+}
+.trending-products{
+    margin-top:50px;
+    display: flex;
+    justify-content: space-around;
+}
+.p1,.p2,.p3,.p4{
+    width:22%;
+}
+.about-text{
+    color:#3C1053;
+}
+.footer{
+    margin-top: 50px;
+    padding:25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer,footer .socials li a{
+    background-color:#EDE7F6 ;
+    color:#3C1053 ;
+    line-height:30px;
+}
+.contact,.socials,.ql{
+    padding:0;
+    list-style-type: none;
+    margin-top:20px;
+}
+.contact li,.contact li a,.ql li a{
+    margin:10px;
+    text-decoration: none;
+    color:#3C1053;
+}
+.white{
+    color: white;
+}
+.socials li{
+    display: inline;
+    margin:10px;
+}
+.socials li a:hover{
+    color: #872B5D;
+}
+.news{
+    margin:0;
+}
+.news input{
+    line-height:30px;
+    outline-color:#3C1053;
+    width: 100%;
+}
+
+.btn-subscribe{
+    background-color: #3C1053;
+    color: white;
+    border-radius: 3px;
+    padding:10px;
+    text-decoration: none;
+}
+
+.btn-subscribe:hover{
+    background: none;
+    color: #3C1053;
+    border: 1px solid #3C1053;
+    font-weight: bold;
+}
+.foot-text{
+    margin:0;
+    padding-bottom:20px;
+    padding-top:14px;
+    color: #3C1053;
+    font-weight: bold;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+.card-footer a{
+    text-decoration: none;
+    color: #3C1053;
+}
+.card-footer a:hover{
+    color:#872B5D ;
+}
+.cross{
+    text-decoration: line-through;
+}
+.new{
+    font-weight: bold;
+}
+#summer,#partners{
+    margin-top:70px;
+}
+img.payment{
+    margin:10px;
+}
+.partners-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+img.partner{
+    width:10%;
+}
+@media screen and (max-width:1050px){
+    .search-div{
+        display: none;
+    }
+}
+@media screen and (max-width:960px){
+    #speciality{
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:770px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    #banner{
+        margin-top:40px;
+    }
+    #summer h2{
+        font-size: 30px;
+    }
+    .product-name,.card-footer a{
+        font-size: 16px;
+    }
+    footer{
+        font-size: 16px;
+    }
+    .trending-products{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:670px){
+    .main-nav li a{
+        font-size: 16px;
+        padding:10px;
+        color:#3C1053
+    }
+    .sales-text{
+        font-size: 25px;
+    }
+    .hurry{
+        font-size: 60px;
+        margin:0;
+    }
+    .shop-now{
+        margin-top:25px
+    }
+    .footer{
+        display: none;
+    }
+    footer{
+        margin-top:60px;
+        padding-top:20px;
+    }
+
+}
+@media screen and (max-width:600px){
+    .main-nav li a{
+        font-size: 14px;
+        padding:10px;
+        color:#3C1053
+    }
+    .sales-text{
+        font-size: 20px;
+    }
+    .hurry{
+        font-size: 50px;
+        margin:0;
+    }
+    .shop-now{
+        margin-top:20px
+    }
+    .speciality1 p,.speciality2 p,.speciality3 p{
+        font-size: 16px;
+    }
+    #summer h2{
+        font-size: 20px;
+    }
+}
+@media(max-width:545px){
+    #speciality{
+        display: none;
+    }
+    .main-nav li a{
+        font-size: 12px;
+        padding:4px;
+    }
+}
+@media screen and (max-width:510px){
+    #banner{
+        height:50vh;
+    
+        justify-content: center;
+        align-items: center;
+    }
+    .sales-text,.hurry,.shop-now{
+        position: static;
+    }
+    .trending-products{
+        flex-wrap: wrap;
+    }
+    .per{
+        font-size:30px ;
+    }
+    .p1,.p2,.p3,.p4{
+        margin:20px;
+        width:60%;
+    }
+    #partners{
+        display: none;
+    }
+}
+@media screen and (max-width:430px){
+    .main-nav li{
+        margin:0;
+    }       
+    footer{
+        font-size: 15px;
+    } 
+}
